@@ -6,8 +6,9 @@
   },
   "private": true,
   "scripts": {
-    "start": "vite --mode ssr --host --port $PORT",
+    "start": "qwik build preview && vite preview --port $PORT",
     "dev": "vite --mode ssr",
+    "dev.open": "vite --open --mode ssr",
     "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
     "build": "qwik build",
     "build.client": "vite build",
