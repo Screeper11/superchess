@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    flex: 1 1 auto;
+
+    .login-buttons {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../styles/colors';
+
+.container {
+  width: 100%;
+  height: 120vw;
+  position: relative;
+  // center the board
+  margin: 0 auto;
+
+  background-color: $qwik-dark-blue;
+}
