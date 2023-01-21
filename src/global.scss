@@ -1,1 +1,12 @@
 @import './styles/reset.scss';
+@import './styles/colors.scss';
+
+:root {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: black;
+  overflow-y: hidden;
+}
+
+main {
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(114, 65, 194) 40%);
+}

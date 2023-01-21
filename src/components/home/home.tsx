@@ -4,6 +4,7 @@ import ChessBoard from "~/components/chess-board/chess-board";
 import LargeButton from "~/components/buttons/large-button/large-button";
 import Footer from "~/components/footer/footer";
 import Header from "~/components/header/header";
+import MediumButton from "~/components/buttons/medium-button/medium-button";
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -13,10 +14,12 @@ export default component$(() => {
       <Header/>
       <ChessBoard/>
       <div class="buttons">
-        <LargeButton>PLAY</LargeButton>
+        <div class="play-button">
+          <LargeButton desc={"as guest"}>PLAY</LargeButton>
+        </div>
         <div class="login-buttons">
-          <LargeButton>LOGIN</LargeButton>
-          <LargeButton>SIGN UP</LargeButton>
+          <MediumButton>LOGIN</MediumButton>
+          <MediumButton>SIGN UP</MediumButton>
         </div>
       </div>
       <Footer/>

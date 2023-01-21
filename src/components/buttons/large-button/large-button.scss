@@ -1,7 +1,13 @@
-@import '../../../styles/colors';
+@import "./../buttons.scss";
 
 button {
-  width: 100%;
-  background-color: $qwik-light-blue;
-  height: 50px;
+  height: 6em;
+
+  .title {
+    font-size: 3em;
+  }
+
+  .desc {
+    font-size: 1em;
+  }
 }

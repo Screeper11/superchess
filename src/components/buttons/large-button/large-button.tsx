@@ -1,12 +1,19 @@
 import {component$, Slot, useStylesScoped$} from '@builder.io/qwik';
 import styles from './large-button.scss?inline';
 
-export default component$(() => {
+export default component$((props: { desc: string }) => {
   useStylesScoped$(styles);
 
   return (
     <button>
-      <Slot/>
+      <span class="title">
+        <Slot/>
+      </span>
+      <br/>
+      {props.desc &&
+        <span class="desc">
+          {props.desc}
+        </span>}
     </button>
   );
 });
